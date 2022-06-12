@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import Home from "./components/Home.js";
 import './App.css';
+import Snippets from "./components/Snippets.js";
+import Features from "./components/Features.js";
+import Access from "./components/Access.js";
+import Supercharge from "./components/Supercharge.js";
+import References from "./components/References.js";
+import CTABottom from "./components/CTABottom.js";
+import Footer from "./components/Footer.js";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <container className="max-w-full">
+
+      <Home/>
+      <Snippets/>
+      <Features/>
+      <Access/>
+      <Supercharge/>
+      <References/>
+      <CTABottom/>
+      <Footer/>
+
+    </container>
+   
   );
 }
 
